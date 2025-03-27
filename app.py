@@ -20,7 +20,7 @@ def get_ip_info(ip: str, request: Request):
 # API pour obtenir les infos d’un numéro de téléphone (exemple avec Numverify)
 @app.get("/geolocate/phone/{number}")
 def get_phone_info(number: str):
-    API_KEY = "cjAGPiTazJ7ZVersfcF3wLy02rEH1AMj"
+    API_KEY = "f817d85b3f5018fc04b1f1e06dece9a6"
     url = f"http://apilayer.net/api/validate?access_key={API_KEY}&number={number}"
     
     response = requests.get(url).json()
